@@ -1,0 +1,20 @@
+{
+  "name": "jquery-datepicker-for-angularjs",
+  "version": "0.0.0",
+  "description": "This is jquery datepicker for angular.",
+  "main": "public/src/jquery-datepicker-for-angularjs",
+  "keywords": [
+    "angular",
+    "jquery-datepicker"
+  ],
+  "devDependencies":{
+    "grunt": "~0.4.1",
+    "grunt-open": "~0.2.0",
+    "express":"~3.2.2",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-express":"~1.2.1",
+    "matchdep": "~0.1.2"
+  },
+  "author": "Sparrow.jang",
+  "license": "MIT"
+}
