@@ -24,10 +24,11 @@
 
         var clearListener = scope.$watch( "ready", function(){
 
+          if ( scope.value == undefined ) scope.value = new Date();
 
           elem.datepicker({
 
-            defaultDate:new Date( scope.value ),
+            defaultDate:scope.value,
 
             onSelect:function(){
               scope.value = $(this).datepicker( "getDate" );
