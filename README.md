@@ -47,7 +47,6 @@ scope.date = new Date();
 ```
 scope.minDate = new Date(2013,9,9);
 scope.maxDate = new Date(2013,10,9);
-
 scope.select = function(){ console.log( "select" ); };
 ```
 
