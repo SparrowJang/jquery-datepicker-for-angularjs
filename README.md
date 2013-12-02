@@ -42,10 +42,12 @@ scope.date = new Date();
 
 > Optionally, specify min and max dates:
 ```
-<div jquery-ui-datepicker min-date="minDate" max-date="maxDate" ng-model="date"></div>
+<div jquery-ui-datepicker min-date="minDate" max-date="maxDate" ng-model="date" on-select="select()"></div>
 ```
 ```
 scope.minDate = new Date(2013,9,9);
 scope.maxDate = new Date(2013,10,9);
+
+scope.select = function(){ console.log( "select" ); };
 ```
 

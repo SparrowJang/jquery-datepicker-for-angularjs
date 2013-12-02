@@ -9,7 +9,7 @@
 <body ng-app="jquery-ui">
 
 	<div ng-controller="demoController">
-		<div jquery-ui-datepicker min-date="minDate" max-date="maxDate" ng-model="date"></div>
+		<div jquery-ui-datepicker min-date="minDate" max-date="maxDate" ng-model="date" on-select="select()"></div>
 		{{date|date}}
 	</div>
 
@@ -29,6 +29,10 @@
             $scope.$watch( "date", function(){
               console.log( $scope.date );
             });
+
+            $scope.select = function(){
+              console.log( "select" );
+            };
 		}
 	</script>
 </body>

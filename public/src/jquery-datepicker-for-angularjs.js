@@ -15,7 +15,8 @@
       scope:{
         "value":"=ngModel",
         "minDate":"=minDate",
-        "maxDate":"=maxDate"
+        "maxDate":"=maxDate",
+        "onSelect":"&onSelect"
       },
 
       link:function( scope, elem, attrs ){
@@ -31,8 +32,11 @@
             defaultDate:scope.value,
 
             onSelect:function(){
+
               scope.value = $(this).datepicker( "getDate" );
               scope.$apply();
+
+              if ( angular.isFunction( scope.onSelect ) ) scope.onSelect();
             }
 
           });
