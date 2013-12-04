@@ -26,7 +26,7 @@ bower install jqueryDatepickerForAngularjs
 <script type="text/javascript" src="/bower_components/jquery/jquery.js"></script>
 <script type="text/javascript" src="/bower_components/jquery-ui/ui/jquery-ui.js"></script>
 <script type="text/javascript" src="/bower_components/angular/angular.js"></script>
-script type="text/javascript" src="/src/jquery-datepicker-for-angularjs.js"></script>
+<script type="text/javascript" src="/src/jquery-datepicker-for-angularjs.js"></script>
 ```
 
 ###Create a datepicker element
