@@ -8,7 +8,7 @@ This is an [Angularjs](http://angularjs.org/) module that is jquery ui datepicke
 * angularjs
 * jquery ui
 
-#Install
+##Install
 
 ```
 bower install jqueryDatepickerForAngularjs
