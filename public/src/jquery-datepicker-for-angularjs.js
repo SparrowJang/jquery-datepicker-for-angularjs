@@ -27,6 +27,8 @@
 
           if ( scope.value == undefined ) scope.value = new Date();
 
+          else if ( typeof scope.value == "number" ) scope.value = new Date( scope.value );
+
           elem.datepicker({
 
             defaultDate:scope.value,
